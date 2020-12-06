@@ -39,6 +39,5 @@ const PORT = process.env.PORT||1234
 
 app.listen(PORT,()=>{
     // console.log(path.resolve(__dirname,"F.E","build","index.html"));
-
     console.log("Server is running at port " + PORT);
 });
