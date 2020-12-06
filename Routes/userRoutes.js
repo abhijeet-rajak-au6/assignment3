@@ -15,7 +15,8 @@ const {
   createDistrict,
   getDistrict,
   uploadPhoto,
-  createChild
+  createChild,
+  getChildProfile
 } = require("../Controller/stateController");
 const { checkValidation } = require("../middleware/validate");
 const { authorization } = require("../middleware/authorization");
@@ -44,7 +45,9 @@ router.post(
 router.get("/api/master/get-district", authorization,getDistrict);
 router.post("/api/upload-image/s3-upload" ,authorization, upload.single("image"),uploadPhoto)
 
-router.post("/api/beneficiary/child-profile-create", [checkValidation("CREATE_CHILD"),authorization],createChild)
+router.post("/api/beneficiary/child-profile-create", [checkValidation("CREATE_CHILD"),authorization],createChild);
+
+router.get("/api/beneficiary/get-child-profile", authorization, getChildProfile )
 
 
 

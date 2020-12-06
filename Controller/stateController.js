@@ -175,4 +175,23 @@ module.exports = {
       });
     }
   },
+
+  async getChildProfile(req,res){
+    try {
+        const getAllChildProfile = await childModel.find({});
+        return res.status(200).send({
+          success:true,
+          status:200,
+          message:"Child Profile Details",
+          timestamp: new Date().getTime(),
+          child_profile:getAllChildProfile
+        })
+    } catch (error) {
+      return res.status(500).send({
+        success: false,
+        status: 500,
+        message: error.message,
+      });
+    }
+  }
 };
