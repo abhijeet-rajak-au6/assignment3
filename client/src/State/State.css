@@ -1,0 +1,92 @@
+
+.state-content{
+    padding: 2rem;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    background-color: inherit;
+}
+.state-content div:not(:last-child){
+    margin-right: 2rem;
+}
+.add-state{
+    margin: 1rem;
+}
+.disp-state{
+    margin: 1rem;
+    border:1px solid #52AE65;
+    display: flex;
+    justify-content: center;
+    width:70px;
+    height:70px;
+    border-radius: 50%;
+    align-items: center;
+}
+.add-state-form,.display-state-form{
+    padding:1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.display-state-form{
+    padding: 0;
+    color: #3B7F3A;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.display-state-form h4{
+    margin-right: 2rem;
+}
+.add-state-content,.display-state-content{
+    display: flex;
+    margin-top:2rem;
+    justify-content: flex-start;
+    border: 1px solid #C3DFCA;
+    
+    width:25%;
+    border-radius: 10px;
+}
+.display-state-content{
+
+    background-color: #ffffff;
+}
+.add-state-content{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.display-content{
+    width:30%;
+    height:30%;
+    border: 1px solid #C3DFCA;
+}
+.add-state{
+    display: flex;
+    justify-content: center;
+    width:70px;
+    height:70px;
+    border-radius: 50%;
+    align-items: center;
+    border: 1px dotted #C3DFCA;
+}
+
+.add-state-form button{
+    color: #ffffff;
+    border-radius: 5px;
+    width:60%;
+    
+}
+.add-state-form input{
+    margin-bottom: 15px;
+    width:100%;
+    border:none;
+    border-bottom: 1px solid #B7B7B7;
+    background-color: #F8F8F8;
+
+}
+
+
+

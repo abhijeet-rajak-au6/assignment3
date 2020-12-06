@@ -1,0 +1,30 @@
+.user-info{
+    display: flex;
+    justify-content: space-between;
+    margin:30px 115px 0px;
+    padding:30px 0;
+    border:1px solid #EBEAEB;
+    background-color: #ffffff;
+}
+.user-info p:nth-child(1),.user-info p:nth-child(3) {
+    padding:0 20px;
+}
+.user-info p span {
+    color :rgb(32,32,32);
+}
+.user-info p{
+    color: #808080;
+}
+.dashboard-container{
+   padding:"0 30px"; 
+   background:"#ffffff"; 
+   
+}
+.hero-image{
+    height:350px;
+    /* overflow: hidden; */
+    background: url('../assets/img/robert-collins-lP_FbBkMn1c-unsplash.jpg')center center/cover;
+    margin:30px 115px 0px;
+    padding:30px 0;
+    border:1px solid #EBEAEB
+}
